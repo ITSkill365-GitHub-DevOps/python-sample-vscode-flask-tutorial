@@ -46,5 +46,5 @@ steps:
   
   - task: PublishCodeCoverageResults@1
     inputs:
-      codeCoverageTool: Cobertura
+      codeCoverageTool: 'JaCoCo'
       summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
