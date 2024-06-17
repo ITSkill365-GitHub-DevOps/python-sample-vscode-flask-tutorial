@@ -44,6 +44,7 @@ steps:
       pytest
     displayName: 'pytest'
   
-  - task: PublishCodeCoverageResults@2
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core sdk 7.0.x'
     inputs:
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+      version: 7.0.x 
